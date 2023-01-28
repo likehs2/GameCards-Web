@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css-cadastrar-colecao.css">
+
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+            <div class="bar-principal">
+                <img id="qilab" src="QILAB.png">
+                <a class="minhascolecoes-bar" href="Minhas-Colecoes.html">Minhas coleções</a>
+                <a class="Sair-bar" href="login.html">Sair</a>
+            </div>
+        </header>
+
+        <div class="novacolecao">
+            <a id="mensagem-1-text">Nova coleção</a>
+        </div>
+
+        <div class="editar">
+
+            <a id="mensagem-text">Preencha os dados referente à coleção a ser criada</a>
+        </div>
+        <div class="jText">
+            <label id="texto-nome" for="name">Nome coleção:</label>
+            <textarea id="jText-1" type="text" class="input-colecao" placeholder="Insira o nome da coleção"></textarea>
+        </div>
+        <div class="jText">
+            <label id="texto-descricao" for="name">Descrição:</label>
+            <textarea id="jText-descricao" class="input-colecao"
+                placeholder="Descreva os detalhes da coleção"></textarea>
+        </div>
+        <div class="jText-img">
+            <label id="texto-imagem" for="name">Imagem:</label>
+            <input class="input-colecao" id="" placeholder="Escolha uma imagem para a coleção criada…" type="file"
+                accept="image/png, image/jpeg" onchange='uploadImg(this)'>
+        </div>
+        <div class="button">
+            <button id="button-1" type="submit" onclick="Cadastro()">Cadastrar</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    var imagemupload = ""
+
+    function Cadastro() {
+        var input = document.getElementsByClassName("input-colecao")
+        for (let i = 0; i < input.length; i++) {
+            const element = input[i];
+            if (input.value == "") {
+                return
+            }
+        }
+        var storage = localStorage.getItem("local");
+        if (!storage) {
+            storage = []
+        }
+        else {
+            storage = JSON.parse(storage)
+        }
+        storage.push({
+            nome: document.getElementById("jText-1").value,
+            desc: document.getElementById("jText-descricao").value,
+            img: imagemupload,
+            cards: []
+
+        })
+        localStorage.setItem("local", JSON.stringify(storage))
+        window.location.replace('../Projeto 1/Minhas-Colecoes.html')
+
+
+    }
+    function uploadImg(fileInput) {
+        var img = fileInput.files[0];
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+             imagemupload = reader.result;
+        })
+        reader.readAsDataURL(img);
+    }
+
+
+</script>
+
+</html>

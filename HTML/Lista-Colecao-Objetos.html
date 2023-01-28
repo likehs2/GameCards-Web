@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css-lista-colecao-objetos.css">
+
+</head>
+
+<body onload="loadCards()">
+    <div class="menu">
+        <header>
+            <div class="bar-principal">
+                <img id="qilab" src="QILAB.png">
+                <a class="minhascolecoes-bar" href="Minhas-Colecoes.html">Minhas coleções</a>
+                <a class="Sair-bar" href="login.html">Sair</a>
+            </div>
+        </header>
+
+        <div class="colecao-objeto">
+            <a id="mensagem-1-text">Coleção - Objetos</a>
+        </div>
+        <div class="card-wrapper">
+            <div class="card-busca">
+                <div class="card-wrapper-frente">
+                    <img id="img-lupa" src="lupa-branca.png">
+                    <div class="busca-text">
+                        <input id="texto-senha" type="text" value="" placeholder="Busque por um elemento">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="atualizar">
+            <a href="Cadastrar-Colecao-Objetos.html"><button id="button-2" type="submit">Novo cartão</button></a>
+        </div>
+        <div id="card-container">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Árvore</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-1" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Janela</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-2" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Cobertor</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-3" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Telefone</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-4" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Brinquedo</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-5" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Teclado</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-6" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-wrapper-frente">
+                        <div class="card-frente">
+                            <a id="text-frente">Papel</a>
+                            <a href="Atualizar-Colecao-Objetos.html"><img id="img-lapis-7" src="lapis.png"></a>
+                            <img id="img-delete" src="delete.png" onclick="deleted()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <a href="Cartao-verso.html"><button id="button-1" type="submit">Jogar!</button></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <div class="modal fade" id="ModalValidation-delete" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Erro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja remover esse registro ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="apagar()" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var cards;
+    var storage;
+    var index;
+    var indexRemove;
+    var imagemupload;
+    function armIndex(index) {
+        localStorage.setItem("indexeditar", index)
+        window.location.replace('../Projeto 1/Atualizar-Colecao-Objetos.html')
+        
+    }
+    function deleted(indexToRemove) {
+        indexRemove = indexToRemove
+        let modalError = new bootstrap.Modal(document.getElementById('ModalValidation-delete'), {});
+        modalError.show();
+    }
+
+    function apagar(){
+        storage[index].cards.splice(indexRemove, 1)
+        localStorage.setItem("local", JSON.stringify(storage))
+        loadCards()
+    }
+
+    function loadCards() {
+        storage = JSON.parse(localStorage.getItem("local"));
+        index = localStorage.getItem("indexcolecao");
+        console.log(storage)
+        var colecao = storage[index];
+        console.log(colecao)
+        cards = colecao.cards
+        var wrapper = document.getElementById("card-container")
+        wrapper.innerHTML = '';
+        console.log(wrapper.innerHTML)
+        console.log(storage)
+        for (let i = 0; i < cards.length; i++) {
+            wrapper.innerHTML += `            
+            <div class="card">
+                <div class="card-wrapper-frente">
+                    <div class="card-frente">
+                        <a id="text-frente">${cards[i].frente}</a>
+                        <div class="button-wrapper">
+                        <button id="img-lapis" onclick="armIndex(${i})"><img  src="lapis.png">
+                        <button id="img-delete" onclick="deleted(${i})"><img src="delete.png">
+                        </div>
+                    </div>
+                </div>
+            </div>`
+            console.log("ENTROU")
+            console.log(wrapper.innerHTML)
+            console.log(colecao)
+        }
+    }
+</script>
+
+
+</html>

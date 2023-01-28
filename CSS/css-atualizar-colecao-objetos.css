@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(45, 41, 76);
+    padding: 0px;
+    margin: 0px;
+}
+
+.bar-principal {
+    position: relative;
+    height: 65px;
+    background-color: rgb(65, 61, 93);
+    margin: 0px;
+
+
+}
+
+.Sair-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: rgb(204, 203, 207);
+    margin-left: 93%;
+
+
+}
+
+.minhascolecoes-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: rgb(204, 203, 207);
+    margin-left: 79%;
+
+
+}
+
+.atualizar {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(45, 41, 76);
+    width: 100%;
+    padding-bottom: 40px;
+
+}
+
+.colecao-objeto {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 35px;
+    background-color: rgb(45, 41, 76);
+    width: 90%;
+
+}
+.card-wrapper{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    border: 6px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.card-wrapper-frente{
+    height: 45%;
+    width: 100%;
+}
+.card-wrapper-verso{
+    height: 45%;
+    width: 100%;
+}
+.card-frente{
+    width: 100%;
+    
+}
+.card-texto-frente{
+    text-align: center;
+    margin-top: 50px;
+}
+.card-verso{
+    width: 100%;
+    
+}
+.card-texto-verso{
+    text-align: center;
+    margin-top: 50px;
+}
+#text-frente{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(88, 87, 87);
+}
+#text-verso{
+   
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(88, 87, 87);
+}
+#text-card-frente{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bolder;
+    padding: 8px 8px 8px 8px;
+    width: 70%;
+}
+#text-card-verso{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bolder;
+    padding: 8px 8px 8px 8px;
+    width: 70%;
+}
+#mensagem-text {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: rgb(204, 203, 207);
+}
+
+#mensagem-1-text {
+    font-family: sans-serif;
+    font-size: 26px;
+    color: rgb(250, 226, 226);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+#button-1 {
+    border-radius: 5px;
+    padding: 8px 35px 8px 35px;
+    background-color: rgb(94, 87, 150);
+    color: rgb(204, 203, 207);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+}

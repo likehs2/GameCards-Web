@@ -1,0 +1,99 @@
+
+body{
+    background-color: rgb(45, 41, 76);
+    padding: 0px;
+    margin: 0px;
+}
+.bar-principal{
+    position: relative;
+    height: 65px;
+    background-color:rgb(65, 61, 93);
+    margin: 0px;
+    
+    
+}
+
+.cadastro-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: rgb(204, 203, 207);
+    margin-left: 87%;
+    
+
+}
+
+.login{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+    
+}
+
+.login-text{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 900;
+}
+
+.jText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+
+    
+}
+.jText-1{
+    width: 485px;
+    height: 30px;
+    border: 2px;
+    border-radius: 4px;
+    
+}
+#mensagemsenha-text{
+    font-family: sans-serif;
+    color: red;
+    padding-right: 60px;
+    font-size: 11px;
+}
+#texto-senha{
+    width: 485px;
+    height: 30px;
+    border: 2px;
+    border-radius: 4px;
+    
+}
+#texto{
+    color: rgb(204, 203, 207);
+    font-family: sans-serif;
+    margin-right: 440px;
+    font-weight: 300;
+    
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    
+}
+#button-1{
+    border-radius: 5px;
+    padding: 8px 35px 8px 35px;
+    background-color: rgb(94, 87, 150);
+    color: rgb(204, 203, 207);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+}

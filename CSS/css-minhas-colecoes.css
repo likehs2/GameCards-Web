@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(45, 41, 76);
+    padding: 0px;
+    margin: 0px;
+}
+
+.bar-principal {
+    position: relative;
+    height: 65px;
+    background-color: rgb(65, 61, 93);
+    margin: 0px;
+
+
+}
+
+.Sair-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: white;
+    margin-left: 93%;
+
+
+}
+
+.minhascolecoes-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: white;
+    margin-left: 79%;
+    font-weight: bolder;
+
+
+}
+
+.cartao {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(45, 41, 76);
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.card-wrapper {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 6px;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.card-wrapper-frente {
+    height: 45%;
+    width: 100%;
+}
+
+.card-frente {
+    width: 100%;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+#text-frente {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(88, 87, 87);
+}
+
+#text-card {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#mensagem-text {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#mensagem-1-text {
+    font-family: sans-serif;
+    font-size: 26px;
+    color: rgb(250, 226, 226);
+}
+
+#img-lapis {
+    display: flex;
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+#lapis {
+    margin-left: 72%;
+    display: flex;
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+#delete-img{
+    display: flex;
+    border-color: white;
+    color: white;
+    background-color: white; 
+}
+
+#img-delete {
+    margin-left: 75%;
+}
+
+#img-msg {
+    width: 180px;
+    height: 180px;
+}
+
+#text-card-msg {
+    color: rgb(39, 172, 167);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#button-1 {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 12px 15px 12px 35px;
+    background-color: rgb(94, 87, 150);
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 840px;
+}

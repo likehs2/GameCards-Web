@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css-atualizar-colecao-objetos.css">
+
+</head>
+
+<body onload="loadCards()">
+    <div class="menu">
+        <header>
+            <div class="bar-principal">
+                <img id="qilab" src="QILAB.png">
+                <a class="minhascolecoes-bar" href="Minhas-Colecoes.html">Minhas coleções</a>
+                <a class="Sair-bar" href="login.html">Sair</a>
+            </div>
+        </header>
+
+        <div class="colecao-objeto">
+            <a id="mensagem-1-text">Coleção - Objetos</a>
+        </div>
+
+        <div class="atualizar">
+            <a id="mensagem-text">Atualize os dados da frente e do verso do flashcard</a>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-wrapper-frente">
+                    <div class="card-frente">
+                        <a id="text-frente">Frente</a>
+                    </div>
+                    <div class="card-texto-frente">
+                        <input type="text" id="text-card-frente">
+                    </div>
+                </div>
+                <div class="card-wrapper-verso">
+                    <div class="card-verso">
+                        <a id="text-verso">Verso</a>
+                    </div>
+                    <div class="card-texto-verso">
+                        <input type="text" id="text-card-verso">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="button-1" type="submit" onclick="editar()">Salvar Alterações</button>
+        </div>
+    </div>
+</body>
+
+<script>
+        var storage;
+    var index;
+    var indexEditar;
+    function armIndex(index) {
+        localStorage.setItem("indexeditar", index)
+        window.location.replace('../Projeto 1/Atualizar-Colecao-Objetos.html')
+        
+    }
+    function loadCards() {
+        storage = JSON.parse(localStorage.getItem("local"));
+        index = localStorage.getItem("indexcolecao");
+        indexEditar = localStorage.getItem("indexeditar");
+        var colecao = storage[index];
+        document.getElementById("text-card-frente").value = colecao.cards[indexEditar].frente
+        document.getElementById("text-card-verso").value = colecao.cards[indexEditar].verso
+        console.log(colecao)
+    }
+    function editar(){
+        storage[index].cards[indexEditar] = {
+            frente: document.getElementById("text-card-frente").value,
+            verso: document.getElementById("text-card-verso").value,
+        }
+        localStorage.setItem("local", JSON.stringify(storage))
+        window.location.replace('../Projeto 1/Lista-Colecao-Objetos.html')
+
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,147 @@
+
+body{
+    background-color: rgb(45, 41, 76);
+    padding: 0px;
+    margin: 0px;
+}
+.bar-principal{
+    position: relative;
+    height: 65px;
+    background-color:rgb(65, 61, 93);
+    margin: 0px;
+    
+    
+}
+
+.entrar-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    color: rgb(204, 203, 207);
+    margin-left: 87%;
+    
+
+}
+
+.cadastro{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(45, 41, 76);
+    width: 100%;
+    padding-bottom: 40px;
+    
+}
+
+.cadastro-texto{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 900;
+}
+#mensagem-text{
+    font-family: sans-serif;
+    color: rgb(204, 203, 207);
+}
+.jText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+
+    
+}
+.jText-senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    
+}
+#mensagemsenha-text{
+    font-family: sans-serif;
+    color: rgb(107, 112, 128);
+    padding-right: 60px;
+    font-size: 11px;
+}
+#mensagemcsenhatext{
+    visibility: hidden;
+    font-family: sans-serif;
+    color: rgb(247, 0, 0);
+    padding-right: 400px;
+    font-size: 11px;
+}
+.jText-1{
+    width: 485px;
+    height: 30px;
+    border: 2px;
+    border-radius: 4px;
+    
+}
+.texto-senha{
+    width: 485px;
+    height: 30px;
+    border: 2px;
+    border-radius: 4px;
+    
+}
+
+#texto{
+    color: rgb(204, 203, 207);
+    font-family: sans-serif;
+    margin-right: 440px;
+    font-weight: 300;
+    
+}
+#texto-csenha{
+    color: rgb(204, 203, 207);
+    font-family: sans-serif;
+    margin-right: 390px;
+    font-weight: 300;
+    
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    
+}
+#button-1{
+    border-radius: 5px;
+    padding: 8px 35px 8px 35px;
+    background-color: rgb(94, 87, 150);
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-weight: bolder;
+}
+#email-dialog{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#nome-dialog{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#senha-dialog{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

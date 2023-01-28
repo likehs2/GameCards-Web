@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css-cartao-verso.css">
+
+</head>
+
+<body onload="loadCards()">
+    <div class="menu">
+        <header>
+            <div class="bar-principal">
+                <img id="qilab" src="QILAB.png">
+                <a class="minhascolecoes-bar" href="Minhas-Colecoes.html">Minhas coleções</a>
+                <a class="Sair-bar" href="login.html">Sair</a>
+            </div>
+        </header>
+
+        <div class="cartao">
+            <a id="mensagem-text">Cartão 8/8</a>
+
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-wrapper-frente" id="card-wrapper-frente">
+                    <div class="card-texto-frente">
+                        <a id="text-card-frente">Window</a>
+                    </div>
+                </div>
+                <a id="text-meio-card">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    - - - - -</a>
+                <div class="card-wrapper-frente" id="card-wrapper-verso">
+                    <div class="card-texto-frente">
+                        <a id="text-card-verso">Janela</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="button-1" type="submit" onclick="nextCartao()">Virar</button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    var cards = []
+    var msgIndice = document.getElementById("mensagem-text")
+    var borderMiddle = document.getElementById("text-meio-card")
+    var textCardFrente = document.getElementById("text-card-frente")
+    var textCardVerso = document.getElementById("text-card-verso")
+    var wrapperCardFrente = document.getElementById("card-wrapper-frente")
+    var wrapperCardVerso = document.getElementById("card-wrapper-verso")
+    var buttonElement = document.getElementById("button-1")
+    var indexCard = 0;
+    var virado = false;
+
+
+    function loadCards() {
+        var index = localStorage.getItem("indexcolecao");
+        storage = JSON.parse(localStorage.getItem("local"));
+        cards = storage[index].cards;
+        setMsgIndice();
+    }
+
+    function setMsgIndice() {
+        textCardFrente.innerText = cards[indexCard].frente
+        textCardVerso.innerText = cards[indexCard].verso
+        msgIndice.innerText = `Cartão ${indexCard + 1}/${cards.length}`
+    }
+    function nextCartao() {
+        if (indexCard === cards.length - 1 && virado) {
+            window.location.replace('../Projeto 1/Lista-Colecao-Objetos.html')
+            return
+        }
+        if (virado === false) {
+            buttonElement.innerText = "Próximo"
+            wrapperCardVerso.style.display = 'block'
+            borderMiddle.style.display = 'block'
+            virado = !virado;
+        } else if (virado === true) {
+            buttonElement.innerText = "Virar"
+            wrapperCardVerso.style.display = 'none'
+            borderMiddle.style.display = 'none'
+            virado = !virado;
+            indexCard += 1;
+        }
+        if (indexCard === cards.length - 1 && virado) {
+            buttonElement.innerText = "Finalizar"
+        }
+        setMsgIndice()
+    }
+</script>
+
+</html>
